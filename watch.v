@@ -26,12 +26,12 @@ module watch(
     input enter_i,
     input esc_i,
     input clk,
-    output [7:0] out5,
-    output [7:0] out4,
-    output [7:0] out3,
-    output [7:0] out2,
-    output [7:0] out1,
-    output [7:0] out0,
+    output [7:0] o5,
+    output [7:0] o4,
+    output [7:0] o3,
+    output [7:0] o2,
+    output [7:0] o1,
+    output [7:0] o0,
 	output alarm
     );
 
@@ -43,25 +43,32 @@ module watch(
 	assign enter = ~enter_i;
 	assign esc = ~esc_i;
 	
-	assign out5 = hour;
-	assign out3 = min1;
-	assign out2 = min0;
-	assign out1 = sec1;
-	assign out0 = sec0;
+	reg [7:0] out5, out4, out3, out2, out1, out0;
+	assign o5 = out5; assign o4 = out4; assign o3 = out3;
+	assign o2 = out2; assign o1 = out1; assign o0 = out0;
 	
 	reg [4:0] bcd5, bcd4, bcd3, bcd2, bcd1, bcd0;
-	reg [7:0] seven5, seven4, seven3, seven2, seven1, seven0;
+	wire [7:0] seven5, seven4, seven3, seven2, seven1, seven0;
 	reg [5:0] blink_in, blink, blink_out;
 	reg [7:0] blink_out5, blink_out4, blink_out3, blink_out2, blink_out1, blink_out0;
 	reg [15:0] count_blink;
-	reg alarm;
+
+	reg [7:0] date_out5, date_out4, date_out3, date_out2, date_out1, date_out0;
+	reg [7:0] watch_out5, watch_out4, watch_out3, watch_out2, watch_out1, watch_out0;
+	reg [7:0] alarm_out5, alarm_out4, alarm_out3, alarm_out2, alarm_out1, alarm_out0;
+	reg [7:0] sw_out5, sw_out4, sw_out3, sw_out2, sw_out1, sw_out0;
+	reg [7:0] timer_out5, timer_out4, timer_out3, timer_out2, timer_out1, timer_out0;
+	reg [7:0] dday_out5, dday_out4, dday_out3, dday_out2, dday_out1, dday_out0;
+	reg [7:0] ladder_out5, ladder_out4, ladder_out3, ladder_out2, ladder_out1, ladder_out0;
+	reg [3:0] mode;
 	
+	// Blink signal
 	always @(posedge clk) begin
 		count_blink = count_blink + 1;
 		if (count_blink == 500000) begin
 			count_blink = 0;
 			blink = ~blink; 
-			blink_out = ~blink_on | (blink_on & blink);
+			blink_out = ~blink_in | (blink_in & blink);
 		end
 		if (blink_out[0]) blink_out0 = 8'b11111111;
 		else blink_out0 = 0;
@@ -84,12 +91,10 @@ module watch(
 	bcd2seven decoder1(.in(bcd1), .out(seven1));
 	bcd2seven decoder0(.in(bcd0), .out(seven0));
 
-	// Mode
-	reg [3:0] mode;
 	initial begin
 		mode = 1;
 		count_blink = 0;
-		blink_in;
+		blink_in = 0;
 		blink_out = 0;
 		blink = 0;
 		blink_out5 = 0;
@@ -100,6 +105,7 @@ module watch(
 		blink_out0 = 0;
 	end
 	
+	// Mode
 	always @(mode) begin
 		blink_in = 0;
 		case(mode)
@@ -176,27 +182,28 @@ module watch(
 
 	/******* Watch(1) & date(0) *******/
 	reg [19:0] count;
-	reg [7:0] year;
-	reg [3:0] year1, year0;
-	reg [7:0] date_out5, date_out4;
-	reg [3:0] month;
-	reg [3:0] month1, month0;
-	reg [7:0] date_out3, date_out2;
-	reg [4:0] day;
-	reg [3:0] day1, day0;
-	reg [7:0] date_out1, date_out0;
-	reg [4:0] hour;
-	reg [3:0] hour1, hour0;
-	reg [7:0] watch_out5, watch_out4;
-	reg [5:0] min;
-	reg [3:0] min1, min0;
-	reg [7:0] watch_out3, watch_out2;
-	reg [5:0] sec;
-	reg [3:0] sec1, sec0;
-	reg [7:0] watch_out1, watch_out0;
+	reg [6:0] year; wire [6:0] year_w;
+	reg [3:0] year1, year0;	wire [3:0] year1_w, year0_w;
+	reg [3:0] month; wire [3:0] month_w;
+	reg [3:0] month1, month0; wire [3:0] month1_w, month0_w;
+	reg [4:0] day;	wire [4:0] day_w;
+	reg [3:0] day1, day0; wire [3:0] day1_w, day0_w;
+	reg [4:0] hour; wire [4:0] hour_w;
+	reg [3:0] hour1, hour0;	wire [3:0] hour1_w, hour0_w;
+	reg [5:0] min;	wire [5:0] min_w;
+	reg [3:0] min1, min0; wire [3:0] min1_w, min0_w;
+	reg [5:0] sec;	wire [5:0] sec_w;
+	reg [3:0] sec1, sec0; wire [3:0] sec1_w, sec0_w;
 	reg month_c, day_c, hour_c, min_c, sec_c;
-	reg [4:0] day_num;
+	reg [4:0] day_num; wire [4:0] day_num_w;
 	reg date_setting, watch_setting;
+	assign year_w = year, year1_w = year1, year0_w = year0;
+	assign month_w= month, month1_w = month1, month0_w = month0;
+	assign day_w= day, day1_w = day1, day0_w = day0;
+	assign hour_w= hour, hour1_w = hour1, hour0_w = hour0;
+	assign min_w= min, min1_w = min1, min0_w = min0;
+	assign sec_w= sec, sec1_w = sec1, sec0_w = sec0;
+	assign day_num_w = day_num;
 	
 	// Enter
 	always @(posedge enter) begin
@@ -207,7 +214,7 @@ module watch(
 	// Esc
 	always @(posedge esc) begin
 		if (mode == 0) date_setting = 0;
-		else if (mode == 1) date_setting = 0;
+		else if (mode == 1) watch_setting = 0;
 	end
 
 	// Left
@@ -277,6 +284,7 @@ module watch(
 	// Down
 	always @(posedge down) begin
 		if (mode == 0 && date_setting == 1) begin
+			case (blink_in)
 				6'b000011: begin
 					if (day == 1) day = day_num;
 					else day = day - 1;
@@ -316,13 +324,8 @@ module watch(
 	// Initialization
 	initial begin
 		count = 0;
-		year = 15;
-		month = 1;
-		day = 1;
-		hour = 0;
-		min = 0;
-		sec = 0;
-		carry = 0;
+		year = 15; month = 1; day = 1; hour = 0; min = 0; sec = 0;
+		sec_c = 0; min_c = 0; hour_c = 0; day_c = 0; month_c = 0;
 	end
 	
 	// Ripple carry increment
@@ -334,12 +337,17 @@ module watch(
 			if (sec == 60) begin
 				sec = 0;
 				sec_c = 1;
-			end;
+			end
 		end
+		if (sec_c) sec_c = 0;
+		if (min_c) min_c = 0;
+		if (hour_c) hour_c = 0;
+		if (day_c) day_c = 0;
+		if (month_c) month_c = 0;
 	end
 	always @(posedge sec_c) begin
 		min = min + 1;
-		sec_c = 0;
+		//sec_c = 0;
 		if (min == 60) begin
 			min = 0;
 			min_c = 1;
@@ -347,7 +355,7 @@ module watch(
 	end
 	always @(posedge min_c) begin
 		hour = hour + 1;
-		min_c = 0;
+		//min_c = 0;
 		if (hour == 24) begin
 			hour = 0;
 			hour_c = 1;
@@ -355,7 +363,7 @@ module watch(
 	end
 	always @(posedge hour_c) begin
 		day = day + 1;
-		hour_c = 0;
+		//hour_c = 0;
 		if (day == day_num + 1) begin
 			day = 1;
 			day_c = 1;
@@ -363,7 +371,7 @@ module watch(
 	end
 	always @(posedge day_c) begin
 		month = month + 1;
-		day_c = 0;
+		//day_c = 0;
 		if (month == 13) begin
 			month = 1;
 			month_c = 1;
@@ -371,7 +379,7 @@ module watch(
 	end
 	always @(posedge month_c) begin
 		year = year + 1;
-		month_c = 0;
+		//month_c = 0;
 		if (year == 100) begin
 			year = 0;
 		end
@@ -388,42 +396,71 @@ module watch(
 		else blink_in = 6'b000000;
 	end
 		
-	day_of_month present(.year(year), .month(month), .num(day_num));
+	day_of_month present(.year(year), .month(month), .num(day_num_w));
 	
-	digit_split hour_split(.in(hour), .out1(hour1), .out0(hour0));
-	digit_split day_split(.in(day), .out1(day1), .out0(day0));
-	digit_split year_split(.in(year), .out1(year1), .out0(year0));
+	digit_split hour_split(.in(hour), .out1(hour1_w), .out0(hour0_w));
+	digit_split day_split(.in(day), .out1(day1_w), .out0(day0_w));
+	digit_split year_split(.in(year), .out1(year1_w), .out0(year0_w));
 	
-	bcd2seven decoder5(.in(year1), .out(date_out5));
-	bcd2seven decoder4(.in(year0), .out(date_out4));
-	bcd2seven decoder3(.in(month1), .out(date_out3));
-	bcd2seven decoder2(.in(month0), .out(date_out2));
-	bcd2seven decoder1(.in(day1), .out(date_out1));
-	bcd2seven decoder0(.in(day0), .out(date_out0));
 	
-	bcd2seven(.in(hour1), .out(watch_out5));
-	bcd2seven(.in(hour0), .out(watch_out4));
-	bcd2seven(.in(min1), .out(watch_out3));
-	bcd2seven(.in(min0), .out(watch_out2));
-	bcd2seven(.in(sec1), .out(watch_out1));
-	bcd2seven(.in(sec0), .out(watch_out0));
-
 	/******* Alarm(2) *******/
-	reg [7:0] alarm_out5, alarm_out4, alarm_out3, alarm_out2, alarm_out1, alarm_out0;
 	
+	// Up
+	always @(posedge up) begin
+		if (mode == 2) mode = mode + 1;
+	end
 	
-	
+	// Down
+	always @(posedge down) begin
+		if (mode == 2) mode = mode - 1;
+	end	
 	/******* Stopwatch(3) *******/
-	reg [7:0] sw_out5, sw_out4, sw_out3, sw_out2, sw_out1, sw_out0;
+	
+	// Up
+	always @(posedge up) begin
+		if (mode == 3) mode = mode + 1;
+	end
+	
+	// Down
+	always @(posedge down) begin
+		if (mode == 3) mode = mode - 1;
+	end	
 	
 	/******* Timer(4) *******/
-	reg [7:0] timer_out5, timer_out4, timer_out3, timer_out2, timer_out1, timer_out0;
+		
+	// Up
+	always @(posedge up) begin
+		if (mode == 4) mode = mode + 1;
+	end
 	
+	// Down
+	always @(posedge down) begin
+		if (mode == 4) mode = mode - 1;
+	end	
+
 	/******* D-day(5) *******/
-	reg [7:0] dday_out5, dday_out4, dday_out3, dday_out2, dday_out1, dday_out0;
+		
+	// Up
+	always @(posedge up) begin
+		if (mode == 5) mode = mode + 1;
+	end
 	
+	// Down
+	always @(posedge down) begin
+		if (mode == 5) mode = mode - 1;
+	end	
+
 	/******* Ladder game(6) *******/
-	reg [7:0] ladder_out5, ladder_out4, ladder_out3, ladder_out2, ladder_out1, ladder_out0;
+	
+	// Up
+	always @(posedge up) begin
+		if (mode == 6) mode = 0;
+	end
+	
+	// Down
+	always @(posedge down) begin
+		if (mode == 6) mode = mode - 1;
+	end	
 	
 endmodule
 
@@ -465,6 +502,19 @@ module digit_split(
 	output [3:0] out1, out0
 	);
 	
-	assign out0 = in % 10;
-	assign out1 = in / 10;
+	reg [3:0] d1, d0;
+	assign out1 = d1, out0 = d0;
+	
+	always @(in) begin
+		if (in >= 90) begin d1 = 9; d0 = in - 90; end
+		else if (in >= 80) begin d1 = 8; d0 = in - 80; end
+		else if (in >= 70) begin d1 = 7; d0 = in - 70; end
+		else if (in >= 60) begin d1 = 6; d0 = in - 60; end
+		else if (in >= 50) begin d1 = 5; d0 = in - 50; end
+		else if (in >= 40) begin d1 = 4; d0 = in - 40; end
+		else if (in >= 30) begin d1 = 3; d0 = in - 30; end
+		else if (in >= 20) begin d1 = 2; d0 = in - 20; end
+		else if (in >= 10) begin d1 = 1; d0 = in - 10; end
+		else begin d1 = 0; d0 = in; end
+	end
 endmodule

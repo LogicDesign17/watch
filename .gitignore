@@ -1,8 +1,8 @@
 *.html
-*.xise
-*.gise
+*.cmd_log
+*.syr
+*.bin
 iseconfig/
-_xmsgs/
 
 #################
 ## Eclipse
