@@ -5,58 +5,20 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;watch.v&quot; line 410 </arg>Connection to input port &apos;<arg fmt="%s" index="2">year</arg>&apos; does not match port size
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;watch.v&quot; line 472 </arg>Connection to input port &apos;<arg fmt="%s" index="2">year</arg>&apos; does not match port size
 </msg>
 
-<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;watch.v&quot; line 410 </arg>Connection to input port &apos;<arg fmt="%s" index="2">month</arg>&apos; does not match port size
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;watch.v&quot; line 472 </arg>Connection to input port &apos;<arg fmt="%s" index="2">month</arg>&apos; does not match port size
 </msg>
 
-<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;watch.v&quot; line 412 </arg>Connection to input port &apos;<arg fmt="%s" index="2">in</arg>&apos; does not match port size
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;watch.v&quot; line 474 </arg>Connection to input port &apos;<arg fmt="%s" index="2">in</arg>&apos; does not match port size
 </msg>
 
-<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;watch.v&quot; line 413 </arg>Connection to input port &apos;<arg fmt="%s" index="2">in</arg>&apos; does not match port size
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;watch.v&quot; line 475 </arg>Connection to input port &apos;<arg fmt="%s" index="2">in</arg>&apos; does not match port size
 </msg>
 
-<msg type="warning" file="Xst" num="905" delta="old" >&quot;<arg fmt="%s" index="1">watch.v</arg>&quot; line <arg fmt="%d" index="2">114</arg>: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="905" delta="new" >&quot;<arg fmt="%s" index="1">watch.v</arg>&quot; line <arg fmt="%d" index="2">233</arg>: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;date_out5&gt;, &lt;date_out4&gt;, &lt;date_out3&gt;, &lt;date_out2&gt;, &lt;date_out1&gt;, &lt;date_out0&gt;, &lt;watch_out5&gt;, &lt;watch_out4&gt;, &lt;watch_out3&gt;, &lt;watch_out2&gt;, &lt;watch_out1&gt;, &lt;watch_out0&gt;, &lt;alarm_out5&gt;, &lt;alarm_out4&gt;, &lt;alarm_out3&gt;, &lt;alarm_out2&gt;, &lt;alarm_out1&gt;, &lt;alarm_out0&gt;, &lt;sw_out5&gt;, &lt;sw_out4&gt;, &lt;sw_out3&gt;, &lt;sw_out2&gt;, &lt;sw_out1&gt;, &lt;sw_out0&gt;, &lt;timer_out5&gt;, &lt;timer_out4&gt;, &lt;timer_out3&gt;, &lt;timer_out2&gt;, &lt;timer_out1&gt;, &lt;timer_out0&gt;, &lt;seven5&gt;, &lt;blink_out5&gt;, &lt;seven4&gt;, &lt;blink_out4&gt;, &lt;seven3&gt;, &lt;blink_out3&gt;, &lt;seven2&gt;, &lt;blink_out2&gt;, &lt;seven1&gt;, &lt;blink_out1&gt;, &lt;seven0&gt;, &lt;blink_out0&gt;, &lt;dday_out5&gt;, &lt;dday_out4&gt;, &lt;dday_out3&gt;, &lt;dday_out2&gt;, &lt;dday_out1&gt;, &lt;dday_out0&gt;, &lt;ladder_out5&gt;, &lt;ladder_out4&gt;, &lt;ladder_out3&gt;, &lt;ladder_out2&gt;, &lt;ladder_out1&gt;, &lt;ladder_out0&gt;</arg>
-</msg>
-
-<msg type="warning" file="Xst" num="905" delta="new" >&quot;<arg fmt="%s" index="1">watch.v</arg>&quot; line <arg fmt="%d" index="2">400</arg>: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-<arg fmt="%s" index="3">&lt;mode&gt;</arg>
-</msg>
-
-<msg type="warning" file="Xst" num="905" delta="new" >&quot;<arg fmt="%s" index="1">watch.v</arg>&quot; line <arg fmt="%d" index="2">405</arg>: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-<arg fmt="%s" index="3">&lt;mode&gt;</arg>
-</msg>
-
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">blink_in&lt;5&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">watch</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
-</msg>
-
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">blink_in&lt;4&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">watch</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
-</msg>
-
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">blink_in&lt;3&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">watch</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
-</msg>
-
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">blink_in&lt;2&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">watch</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
-</msg>
-
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">blink_in&lt;1&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">watch</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
-</msg>
-
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">blink_in&lt;0&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">watch</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
-</msg>
-
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">date_enter</arg>&gt; in unit &lt;<arg fmt="%s" index="2">watch</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
-</msg>
-
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">date_esc</arg>&gt; in unit &lt;<arg fmt="%s" index="2">watch</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
-</msg>
-
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">watch_enter</arg>&gt; in unit &lt;<arg fmt="%s" index="2">watch</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
-</msg>
-
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">watch_esc</arg>&gt; in unit &lt;<arg fmt="%s" index="2">watch</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">year</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -119,10 +81,10 @@
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">watch_out0&lt;4:0&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">watch_esc</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">watch_esc</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">watch_enter</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">watch_enter</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">timer_out5&lt;7:5&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
@@ -350,10 +312,10 @@
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">date_out0&lt;4:0&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">date_esc</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">date_esc</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">date_enter</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">date_enter</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">blink_out</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">000000</arg>.
@@ -489,6 +451,18 @@ It will be removed from the design.
 It will be removed from the design.
 </msg>
 
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">1</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">3</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">4</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
@@ -538,42 +512,6 @@ It will be removed from the design.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">7</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">mode_buf_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">watch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">mode_buf_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">watch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">mode_buf_ren_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">watch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">mode_buf_ren_9_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">watch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">mode_buf_ren_9_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">watch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">mode_buf_ren_9_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">watch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">mode_buf_ren_9_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">watch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">1</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">3</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">4</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -634,6 +572,9 @@ It will be removed from the design.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">4</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">blink_out5_7</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">watch</arg>&gt;.
@@ -696,34 +637,154 @@ It will be removed from the design.
 It will be removed from the design.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">mode_buf_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">watch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blink_out0_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">watch</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">47 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;blink_out0_1&gt; &lt;blink_out0_2&gt; &lt;blink_out0_3&gt; &lt;blink_out0_4&gt; &lt;blink_out0_5&gt; &lt;blink_out0_6&gt; &lt;blink_out0_7&gt; &lt;blink_out3_0&gt; &lt;blink_out3_1&gt; &lt;blink_out3_2&gt; &lt;blink_out3_3&gt; &lt;blink_out3_4&gt; &lt;blink_out3_5&gt; &lt;blink_out3_6&gt; &lt;blink_out3_7&gt; &lt;blink_out1_0&gt; &lt;blink_out1_1&gt; &lt;blink_out1_2&gt; &lt;blink_out1_3&gt; &lt;blink_out1_4&gt; &lt;blink_out1_5&gt; &lt;blink_out1_6&gt; &lt;blink_out1_7&gt; &lt;blink_out2_0&gt; &lt;blink_out2_1&gt; &lt;blink_out2_2&gt; &lt;blink_out2_3&gt; &lt;blink_out2_4&gt; &lt;blink_out2_5&gt; &lt;blink_out2_6&gt; &lt;blink_out2_7&gt; &lt;blink_out4_0&gt; &lt;blink_out4_1&gt; &lt;blink_out4_2&gt; &lt;blink_out4_3&gt; &lt;blink_out4_4&gt; &lt;blink_out4_5&gt; &lt;blink_out4_6&gt; &lt;blink_out4_7&gt; &lt;blink_out5_0&gt; &lt;blink_out5_1&gt; &lt;blink_out5_2&gt; &lt;blink_out5_3&gt; &lt;blink_out5_4&gt; &lt;blink_out5_5&gt; &lt;blink_out5_6&gt; &lt;blink_out5_7&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">mode_buf_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">watch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">bcd5_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">watch</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;bcd5_1&gt; &lt;bcd5_2&gt; &lt;bcd5_3&gt; &lt;bcd5_4&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">mode_buf_ren_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">watch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">present/num_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">watch</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;present/num_3&gt; &lt;present/num_2&gt; &lt;present/num_1&gt; &lt;present/num_0&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">mode_buf_ren_9_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">watch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">bcd5_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">watch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">mode_buf_ren_9_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">watch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">present/num_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">watch</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">mode_buf_ren_9_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">watch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">out0_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">watch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">mode_buf_ren_9_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">watch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">out0_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">watch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">N0</arg>&gt;; this signal is connected to multiple drivers.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">out1_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">watch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">blink_in&lt;5&gt;</arg>&gt;; this signal is connected to multiple drivers.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">out1_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">watch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="error" file="Xst" num="528" delta="old" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">blink_in&lt;4&gt;</arg>&gt;; this signal is connected to multiple drivers.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">out2_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">watch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">out2_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">watch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">out3_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">watch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">out3_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">watch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">out4_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">watch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">out4_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">watch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">out5_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">watch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">out5_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">watch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd__old_day_15_cy&lt;0&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd__old_day_15_lut&lt;1&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd__old_day_15_lut&lt;2&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd__old_day_15_lut&lt;3&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd__old_day_15_lut&lt;4&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd_old_sec_12_add0000_cy&lt;0&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd_old_sec_12_add0000_lut&lt;1&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd_old_sec_12_add0000_lut&lt;2&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd_old_sec_12_add0000_lut&lt;3&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd_old_sec_12_add0000_lut&lt;4&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd_old_sec_12_add0000_lut&lt;5&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd_old_min_13_add0000_cy&lt;0&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd_old_min_13_add0000_lut&lt;1&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd_old_min_13_add0000_lut&lt;2&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd_old_min_13_add0000_lut&lt;3&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd_old_min_13_add0000_lut&lt;4&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd_old_min_13_add0000_lut&lt;5&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd_old_hour_14_add0000_cy&lt;0&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd_old_hour_14_add0000_lut&lt;1&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd_old_hour_14_add0000_lut&lt;2&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd_old_hour_14_add0000_lut&lt;3&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd_old_hour_14_add0000_lut&lt;4&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd_old_month_16_add0000_cy&lt;0&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd_old_month_16_add0000_lut&lt;1&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd_old_month_16_add0000_lut&lt;2&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd_old_month_16_add0000_lut&lt;3&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd_old_year_17_add0000_cy&lt;0&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd_old_year_17_add0000_lut&lt;1&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd_old_year_17_add0000_lut&lt;2&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd_old_year_17_add0000_lut&lt;3&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd_old_year_17_add0000_lut&lt;4&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd_old_year_17_add0000_lut&lt;5&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">watch</arg>&gt; on signal &lt;<arg fmt="%s" index="2">Madd_old_year_17_add0000_lut&lt;6&gt;</arg>&gt;; this signal is connected to multiple drivers.
 </msg>
 
 </messages>
