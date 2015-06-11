@@ -416,37 +416,37 @@
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">alarm_out0&lt;4:0&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000</arg>.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">0000</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">mode</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">0000</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">mode</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">0011</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">mode</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">0011</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">mode</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">0100</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">mode</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">0100</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">mode</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">0101</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">mode</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">0101</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">mode</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">0110</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">mode</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">0110</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">mode</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">0010</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">mode</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">0010</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">mode</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">0011</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">mode</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">0011</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">mode</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">0100</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">mode</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">0100</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">mode</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">0101</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">mode</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">0101</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">mode</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">0110</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">mode</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">0110</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">mode</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">0000</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">mode</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">0000</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">mode</arg>&gt;.
 </msg>
 
 <msg type="error" file="Xst" num="71" delta="old" >Redeclaration of an instance : <arg fmt="%s" index="1">mode</arg>.

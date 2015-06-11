@@ -63,7 +63,7 @@ module watch(
 	reg [3:0] mode;
 	
 	// Blink signal
-	always @(posedge clk) begin
+	always @(posedge clk) begin 
 		count_blink = count_blink + 1;
 		if (count_blink == 500000) begin
 			count_blink = 0;
