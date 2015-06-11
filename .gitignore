@@ -221,3 +221,6 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 _xmsgs/pn_parser.xmsgs
+watch.gise
+webtalk_pn.xml
+xst/work/hdllib.ref
