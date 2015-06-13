@@ -33,18 +33,15 @@ module blink(
 	end
 	
 	always @(posedge clk) begin
-		if (on) begin
-			if (val) begin
-				count = count + 1;
-				if (count == 500000) begin
-					count = 0;
-					out = ~out;
-				end
+		if (on & val) begin
+			count = count + 1;
+			if (count == 500000) begin
+				count = 0;
+				out = ~out;
 			end
 		end
 		else begin
 			out = val;
-			count = 0;
 		end
 	end
 
