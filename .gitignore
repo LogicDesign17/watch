@@ -2,7 +2,7 @@
 *.cmd_log
 *.syr
 *.bin
-iseconfig/
+
 
 #################
 ## Eclipse
