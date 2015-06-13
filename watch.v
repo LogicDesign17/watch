@@ -58,7 +58,7 @@ module watch(
 		.esc(esc),
 		.clk(clk),
 		
-		.out(out_w),
+		.out(out_w[0]),
 		.norm(norm[0]),
 		.year(year),
 		.month(month),
@@ -74,7 +74,7 @@ module watch(
 		.esc(esc),
 		.clk(clk),
 		
-		.out(out_w),
+		.out(out_w[1]),
 		.norm(norm[1]),
 		.hour(hour),
 		.min(min),
@@ -90,7 +90,7 @@ module watch(
 		.esc(esc),
 		.clk(clk),
 		
-		.out(out_w),
+		.out(out_w[2]),
 		.alarm(alarm_w[2]),
 		.norm(norm[2]),
 		.hour(hour),
@@ -107,7 +107,7 @@ module watch(
 		.esc(esc),
 		.clk(clk),
 		
-		.out(out_w),
+		.out(out_w[3]),
 		.norm(norm[3])
 		);
 		
@@ -120,7 +120,7 @@ module watch(
 		.esc(esc),
 		.clk(clk),
 		
-		.out(out_w),
+		.out(out_w[4]),
 		.norm(norm[4]),
 		.alarm(alarm_w[4])
 		);
@@ -137,7 +137,7 @@ module watch(
 		.day(day),
 		.clk(clk),
 		
-		.out(out_w),
+		.out(out_w[5]),
 		.norm(norm[5])
 		);
 	
@@ -150,7 +150,7 @@ module watch(
 		.esc(esc),
 		.clk(clk),
 		
-		.out(out_w),
+		.out(out_w[6]),
 		.norm(norm[6])
 		);
 	
