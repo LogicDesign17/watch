@@ -74,8 +74,23 @@
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputAdded"/>
+<<<<<<< HEAD
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputRemoved"/>
+=======
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="watch.lso"/>
+      <outfile xil_pn:name="watch.ngc"/>
+      <outfile xil_pn:name="watch.ngr"/>
+      <outfile xil_pn:name="watch.prj"/>
+      <outfile xil_pn:name="watch.stx"/>
+      <outfile xil_pn:name="watch.syr"/>
+      <outfile xil_pn:name="watch.xst"/>
+      <outfile xil_pn:name="watch_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+>>>>>>> origin/master
     </transform>
   </transforms>
 
