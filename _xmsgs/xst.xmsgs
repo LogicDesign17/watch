@@ -5,41 +5,31 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1439" delta="new" >"D:\team17\watch\watch.v" Line 39: Multiple packed dimensions are not allowed in this mode of verilog
+<msg type="warning" file="HDLCompiler" num="1335" delta="new" >"C:\Users\cse\Desktop\watch\watch.v" Line 30: Port <arg fmt="%s" index="1">out</arg> must not be declared to be an array
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\team17\watch\watch.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">watch</arg>&gt; remains a black box.
+<msg type="error" file="HDLCompiler" num="251" delta="new" >"C:\Users\cse\Desktop\watch\watch.v" Line 61: Cannot access memory <arg fmt="%s" index="1">out_w</arg> directly
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">up_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="error" file="HDLCompiler" num="251" delta="new" >"C:\Users\cse\Desktop\watch\watch.v" Line 77: Cannot access memory <arg fmt="%s" index="1">out_w</arg> directly
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">down_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="error" file="HDLCompiler" num="251" delta="new" >"C:\Users\cse\Desktop\watch\watch.v" Line 93: Cannot access memory <arg fmt="%s" index="1">out_w</arg> directly
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">left_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="error" file="HDLCompiler" num="251" delta="new" >"C:\Users\cse\Desktop\watch\watch.v" Line 110: Cannot access memory <arg fmt="%s" index="1">out_w</arg> directly
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">right_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="error" file="HDLCompiler" num="251" delta="new" >"C:\Users\cse\Desktop\watch\watch.v" Line 123: Cannot access memory <arg fmt="%s" index="1">out_w</arg> directly
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">enter_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="error" file="HDLCompiler" num="251" delta="new" >"C:\Users\cse\Desktop\watch\watch.v" Line 140: Cannot access memory <arg fmt="%s" index="1">out_w</arg> directly
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">esc_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="error" file="HDLCompiler" num="251" delta="new" >"C:\Users\cse\Desktop\watch\watch.v" Line 153: Cannot access memory <arg fmt="%s" index="1">out_w</arg> directly
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="3152" delta="new" >You have chosen to run a version of XST which is not the default solution
-for the specified device family. You are free to use it in order to take
-advantage of its enhanced HDL parsing/elaboration capabilities. However,
-please be aware that you may be impacted by  language support differences.
-This version may also result in circuit performance and device utilization
-differences for your particular design. You can always revert back to the
-default XST solution by setting the &quot;use_new_parser&quot; option to value &quot;no&quot; 
-on the XST command line or in the XST process properties panel.
+<msg type="error" file="HDLCompiler" num="598" delta="new" >"C:\Users\cse\Desktop\watch\watch.v" Line 21: Module &lt;<arg fmt="%s" index="1">watch</arg>&gt; ignored due to previous errors.
 </msg>
 
 </messages>

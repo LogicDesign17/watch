@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    21:14:08 06/13/2015 
+// Create Date:    22:20:05 06/13/2015 
 // Design Name: 
-// Module Name:    blink 
+// Module Name:    stopwatch 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,31 +18,8 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module blink(
-	input on,
-	input val,
-	input clk,
-	output out
-	);
+module stopwatch(
+    );
 
-	reg [18:0] count;
-	
-	initial begin
-		out = 0;
-		count = 0;
-	end
-	
-	always @(posedge clk) begin
-		if (on & val) begin
-			count = count + 1;
-			if (count == 500000) begin
-				count = 0;
-				out = ~out;
-			end
-		end
-		else begin
-			out = val;
-		end
-	end
 
 endmodule
